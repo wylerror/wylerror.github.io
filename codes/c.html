@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html>
+<head>
+    <style>
+        @keyframes content-slide-in
+        {
+            from
+            {
+                width: 0;
+            }
+            to
+            {
+                width: 27ch;
+            }
+        }
+        @keyframes sprinkle-bling
+        {
+            from
+            {
+                border-right: 1px solid transparent;
+            }
+            to
+            {
+                border-right: 1px solid #000;
+            }
+        }
+        *
+        {
+            font-family: Consolas;
+            margin: 0;
+            padding: 0;
+        }
+        .container
+        {
+            background-color: #fff;
+            height: 100vh;
+        }
+        .content
+        {
+            animation: content-slide-in 3s steps(27) forwards;
+            overflow: hidden;
+            position: relative;
+            white-space: nowrap;
+        }
+            .content::after
+            {
+                content: '';
+                height: 16px;
+                position: absolute;
+                right: 0;
+                animation: sprinkle-bling .5s steps(2) infinite;
+            }
+        .flex
+        {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex">
+        <div class="content">
+            <pre>
+#include&lt;stdio.h&gt;
+int main(void)
+{
+    printf("Hello world!");
+    return 0;
+}
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

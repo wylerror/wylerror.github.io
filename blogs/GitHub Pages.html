@@ -1,0 +1,69 @@
+﻿﻿<!doctype html>
+<html>
+    <head>
+        <script>
+            var username, step = -1, help = ['Ensure you are logging in GitHub', 'Create your repository and name it ".github.io"', 'Create your index.html or index.md in your directories and name it "DirectoryName/index.html" or "DirectoryName/index.md"<br />Create your 404.html or 404.md<br />Create your README.md<br />Create your LICENSE', 'Visit your website'], website = ['github.com/login', 'github.com/new', 'github.com//.github.io', '.github.io']
+            function SubmitUsername()
+            {
+                username = document.getElementById('username').value, help[1] = help[1].replace(' "', ` "${username}`), website[2] = website[2].replace('//', `/${username}/${username}`), website[3] = username + website[3]
+            }
+            function LastStep()
+            {
+                if (step < 1)
+                    return
+                step -= 1
+                Change()
+            }
+            function SetStep($step)
+            {
+                step = $step
+                Change()
+            }
+            function NextStep()
+            {
+                if (step == 3)
+                    return
+                step += 1
+                Change()
+            }
+            function Change()
+            {
+                document.getElementById('step').innerHTML = `Step ${step + 1}`, document.getElementById('help').innerHTML = help[step], document.getElementById('website').src = 'https://' +  website[step]
+            }
+        </script>
+        <title>
+            Blog | GitHub Pages
+        </title>
+    </head>
+    <body style='background: linear-gradient(aqua,deepskyblue)'>
+        <h1>
+            Hello!
+        </h1>
+        <h3>
+            This sentence is for you and my first blog on my own
+            <a href='..' target='_blank'>
+                website</a>.
+            <br />
+            Let me show you how to build a website using GitHub Pages, step by step.
+            <br />
+            <br />
+            Preparation: Your own GitHub account
+            <br />
+            Username:
+            <input id='username' />
+            <input onclick='SubmitUsername()' type='submit' value='Submit' />
+            <br />
+        </h3>
+        <h2 id='step'></h2>
+        <p id='help'></p>
+        <input onclick='LastStep()' type='button' value='Last step' />
+        <label>
+            <input onclick='SetStep(0)' type='button' value='1' />
+            <input onclick='SetStep(1)' type='button' value='2' />
+            <input onclick='SetStep(2)' type='button' value='3' />
+            <input onclick='SetStep(3)' type='button' value='4' />
+        </label>
+        <input onclick='NextStep()' type='button' value='Next step' />
+        <iframe height=725 id='website' style='width: 100%;'></iframe>
+    </body>
+</html>
