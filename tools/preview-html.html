@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <script>
+            function Preview()
+            {
+                document.getElementById('output').srcdoc = document.getElementById('input').value
+            }
+        </script>
+        <style>
+            #submit
+            {
+                float: right;
+            }
+            #input
+            {
+                height: 17.5px;
+                resize: vertical;
+                width: 95%;
+            }
+            #input-area
+            {
+                margin: 10px 10px 10px 10px;
+            }
+            #output
+            {
+                width: 100%;
+            }
+            body
+            {
+                background: aqua;
+            }
+            h1
+            {
+                text-align: center;
+            }
+        </style>
+        <title>
+            Tool | Preview HTML
+        </title>
+    </head>
+    <body>
+        <h1>
+            Preview HTML
+        </h1>
+        <div id='input-area'>
+            <textarea id='input'><!--
+Input your HTML code
+Help: Use <a href='https://wylerror.github.io'>Main Website</a> to preview my website
+--></textarea>
+            <input id='submit' onclick='Preview()' type='submit' value='Preview' />
+        </div>
+        <div>
+            <iframe height=735 id='output' srcdoc='<!doctype html><html><head></head><body>Hello world!</body></html>'></iframe>
+        </div>
+    </body>
+</html>

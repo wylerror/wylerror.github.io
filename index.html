@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            @font-face
+            {
+                font-family: scp;
+                src: url(fonts/SourceCodePro-Regular.ttf);
+            }
+            #code
+            {
+                background: #7f7fff;
+            }
+            #copyright
+            {
+                background: deepskyblue;
+                height: 80px;
+                margin-top: 40px;
+            }
+            #index
+            {
+                background: gray;
+                height: 60px;
+                margin-top: 30px;
+            }
+            #left
+            {
+                background: red;
+                float: left;
+            }
+            #right
+            {
+                background: blue;
+                float: right;
+            }
+            .center
+            {
+                background: green;
+                margin: 0 auto;
+                width: 45%;
+            }
+            .side
+            {
+                height: 200px;
+                overflow: hidden;
+                text-align: left;
+                width: 25%;
+            }
+            body
+            {
+                background: url(images/bg-img.jpg);
+            }
+            div
+            {
+                border-radius: 10px;
+            }
+            h1
+            {
+                color: gray;
+            }
+            h3
+            {
+                color: orange;
+            }
+            iframe
+            {
+                margin: 12.5px 12.5px 12.5px 12.5px;
+            }
+            img
+            {
+                height: 25px;
+                width: 25px;
+            }
+            li
+            {
+                color: skyblue;
+            }
+            #code, #copyright
+            {
+                width: 100%;
+            }
+            .center, div, h1, h3
+            {
+                font-family: scp;
+                text-align: center;
+            }
+            span, ul
+            {
+                color: gold;
+            }
+        </style>
+        <title>
+            Main Website | wylerror.github.io
+        </title>
+    </head>
+    <body>
+        <h1>
+            Welcome to wylerror.github.io!
+        </h1>
+        <h3>
+            Profile
+        </h3>
+        <div class='side' id='left'>
+            <ul>
+                Repositories:
+                <li>
+                    <a href='https://github.com/wylerror/tapict' target='_blank'>
+                        TAPICT
+                    </a>
+                </li>
+                <li>
+                    <a href='https://github.com/wylerror/wylerror' target='_blank'>
+                        wylerror
+                    </a>
+                </li>
+                <li>
+                    <a href='https://github.com/wylerror/wylerror.github.io' target='_blank'>
+                        wylerror.github.io
+                    </a>
+                </li>
+                ...
+            </ul>
+        </div>
+        <div class='side' id='right'>
+            <ul>
+                My Programming Languages
+                <li>
+                    C/C++
+                </li>
+                <li>
+                    Java
+                </li>
+                <li>
+                    Python
+                </li>
+                <li>
+                    HTML/CSS/JS
+                </li>
+                <li>
+                    Markdown
+                </li>
+                <li>
+                    Shell on Linux/Windows
+                </li>
+                ...
+            </ul>
+        </div>
+        <div class='center'>
+            <div>
+                <span>
+                    Hello!
+                </span>
+                <br />
+                I am
+                <a href='https://github.com/wylerror' target='_blank'>
+                    wylerror</a>
+                and
+                <a href='#'>
+                    this</a>
+                is my own website.
+                <br />
+                Do you want to know me more?
+                <br />
+                Check
+                <a href='self-introduction' onclick='alert(`Easter egg is in it!`)' target='_blank'>
+                    it</a>
+                out.
+                <br />
+                <a href='https://github.com/wylerror' target='_blank'>
+                    <img alt='GitHub' src='images/github.png' />
+                </a>
+            </div>
+        </div>
+        <div class='center' id='index'>
+            <br />
+            <a href='blogs' target='_blank'>
+                Blogs</a>
+            &ensp;
+            <a href='documents' target='_blank'>
+                Documents</a>
+            &ensp;
+            <a href='tools' target='_blank'>
+                Tools
+            </a>
+            <br />
+        </div>
+        <br />
+        <h3>
+            Hello world!
+        </h3>
+        <div class='center' id='code'>
+            <iframe src='codes/c.html'></iframe>
+            <iframe src='codes/cpp.html'></iframe>
+            <iframe src='codes/java.html' width=400></iframe>
+            <iframe src='codes/py.html' width=200></iframe>
+        </div>
+        <div class='center' id='copyright'>
+            <br />
+            Copyright (c) 2024 wylerror
+            <br />
+            wylerror.github.io
+        </div>
+    </body>
+</html>

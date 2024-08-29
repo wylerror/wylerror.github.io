@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function Show()
+            {
+                document.getElementById('hide').style.display = 'block'
+            }
+        </script>
+        <style>
+            #hide
+            {
+                display: none;
+            }
+            #show
+            {
+                height: 310px;
+            }
+            body
+            {
+                background: silver;
+                text-align: center;
+            }
+            a, body
+            {
+                color: gold;
+            }
+            iframe
+            {
+                width: 100%;
+            }
+        </style>
+        <title>
+            Self Introduction
+        </title>
+    </head>
+    <body>
+        <h1>
+            wylerror
+        </h1>
+        <h3>
+            Name: Wang Yilan
+            <br />
+            Birthday: 2011/1/1
+        </h3>
+        Believe it or not :)
+        <h3>
+            Gender/Sex: Male
+            <br />
+            Nationality: People's Republic of China
+            <br />
+            <br />
+            Email: wylerror@outlook.com
+            <br />
+            <a href='https://github.com/wylerror' target='_blank'>
+                <img alt='Icon' height='100' src='../images/github.png' />
+                <br />
+                GitHub
+            </a>
+        </h3>
+        <div id='show' onclick='Show()'></div>
+        <div id='hide'>
+            <br />
+            <iframe height=735 src='../games/2048.html'></iframe>
+        </div>
+    </body>
+</html>

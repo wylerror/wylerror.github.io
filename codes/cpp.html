@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <style>
+            @keyframes content-slide-in
+            {
+                from
+                {
+                    width: 0;
+                }
+                to
+                {
+                    width: 30ch;
+                }
+            }
+            *
+            {
+                font-family: Consolas, monospace;
+                margin: 0;
+                padding: 0;
+            }
+            #container
+            {
+                align-items: center;
+                background: #fff;
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+            }
+            #content
+            {
+                animation: content-slide-in 3s steps(30) forwards;
+                overflow: hidden;
+                position: relative;
+                white-space: nowrap;
+            }
+                #content:after
+                {
+                    content: '';
+                    height: 16px;
+                    position: absolute;
+                    right: 0;
+                }
+        </style>
+    </head>
+    <body>
+        <div id='container'>
+            <div id='content'>
+                <pre>#include&lt;iostream&gt;
+int main()
+{
+    std::cout<<"Hello world!";
+    return 0;
+}</pre>
+            </div>
+        </div>
+    </body>
+</html>
