@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function SendEmail() {
+                window.location.href = 'mailto:' + document.getElementById('input').value
+            }
+        </script>
+        <style>
+            body
+            {
+                text-align: center;
+            }
+        </style>
+        <title>
+            Tool | Send Email
+        </title>
+    </head>
+    <body>
+        <h1>
+            Send Email
+        </h1>
+        <input id='input' />
+        <input onclick='SendEmail()' type='submit' value='Send' />
+    </body>
+</html>
