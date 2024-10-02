@@ -1,0 +1,1 @@
+# <span style='color: #f00;'>W</span><span style='color: #0f0;'>e</span><span style='color: #00f;'>l</span><span style='color: #ff0;'>c</span><span style='color: #f0f;'>o</span><span style='color: #0ff;'>m</span> e<sup>iπ</sup>=-1=1-<span style='background: #000; color: #fff;'>to</span> [my document](#)

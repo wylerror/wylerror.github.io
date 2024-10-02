@@ -2,7 +2,7 @@
 <html>
     <head>
         <script>
-            var username, step = -1, help = ['Ensure you are logging in GitHub', 'Create your repository and name it ".github.io"', 'Create your index.html or index.md in your directories and name it "DirectoryName/index.html" or "DirectoryName/index.md"<br />Create your 404.html or 404.md<br />Create your README.md<br />Create your LICENSE', 'Visit your website'], website = ['github.com/login', 'github.com/new', 'github.com//.github.io', '.github.io']
+            var username, step = -1, help = ['Ensure you are logged in to GitHub', 'Create your repository and name it ".github.io"', 'Create your index.html or index.md in your directories and name it "DirectoryName/index.html" or "DirectoryName/index.md"<br />Create your 404.html or 404.md<br />Create your README.md<br />Create your LICENSE', 'Visit your website'], website = ['github.com/login', 'github.com/new', 'github.com//.github.io', '.github.io']
             function Change()
             {
                 document.getElementById('step').innerHTML = `Step ${step + 1}`, document.getElementById('help').innerHTML = help[step], document.getElementById('website').src = 'https://' +  website[step]
