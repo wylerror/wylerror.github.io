@@ -24,20 +24,23 @@
                         document.getElementById('output').innerHTML += `Terminal $ ${document.getElementById('input').value}<br />`
                         switch (document.getElementById('input').value)
                         {
+                            case 'bing':
+                                Open('www.bing.com')
+                                break
                             case 'clear':
                                 document.getElementById('output').innerHTML = ''
                                 break
                             case 'code':
-                                window.open('https://vscode.dev')
+                                Open('https://vscode.dev')
                                 break
                             case 'exit':
                                 document.getElementById('software').innerHTML = ''
                                 break
                             case 'github':
-                                window.open('https://github.com')
+                                Open('https://github.com')
                                 break
                             case 'help':
-                                document.getElementById('output').innerHTML += 'clear: Clear the terminal<br />code: Open Visual Studio Code<br />exit: Exit the terminal<br />github: Open GitHub<br />help: Show this message<br />time: Show the current time<br />version: Show the version of the OS<br />'
+                                document.getElementById('output').innerHTML += 'bing: Open Microsoft Bing<br />clear: Clear the terminal<br />code: Open Visual Studio Code<br />exit: Exit the terminal<br />github: Open GitHub<br />help: Show this message<br />time: Show the current time<br />version: Show the version of the OS<br />'
                                 break
                             case 'time':
                                 document.getElementById('output').innerHTML += `${document.getElementById('time').innerHTML}<br />`
@@ -109,11 +112,11 @@
             {
                 background: black;
             }
-            #github, #visualstudiocode
+            #microsoftbing, #github, #visualstudiocode
             {
                 color: black;
             }
-                #github:hover, #visualstudiocode:hover
+                #microsoftbing:hover, #github:hover, #visualstudiocode:hover
                 {
                     animation: preview 1s ease-in-out;
                 }
@@ -154,6 +157,14 @@
                     $
                 </h1>
                 <br />
+            <div class='icon' id='microsoftbing' onclick='Open("www.bing.com")' onmouseover='ChangeSoftware("<h1>Microsoft Bing</h1>Click to open the Microsoft Bing website.")' onmouseout='ChangeSoftware("")'>
+                <br />
+                MSBing
+                <h1>
+                    Bing
+                </h1>
+                <br />
+            </div>
             </div>
                 <div class='icon' id='github' onclick='Open("github.com")' onmouseover='ChangeSoftware("<h1>GitHub</h1>Click to open the GitHub website.")' onmouseout='ChangeSoftware("")'>
                 <br />
