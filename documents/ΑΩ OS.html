@@ -31,22 +31,39 @@
                                 document.getElementById('output').innerHTML = ''
                                 break
                             case 'code':
-                                Open('https://vscode.dev')
+                                Open('vscode.dev')
                                 break
                             case 'exit':
                                 document.getElementById('software').innerHTML = ''
                                 break
                             case 'github':
-                                Open('https://github.com')
+                                Open('github.com')
                                 break
                             case 'help':
-                                document.getElementById('output').innerHTML += 'bing: Open Microsoft Bing<br />clear: Clear the terminal<br />code: Open Visual Studio Code<br />exit: Exit the terminal<br />github: Open GitHub<br />help: Show this message<br />time: Show the current time<br />version: Show the version of the OS<br />'
+                                document.getElementById('output').innerHTML += 'bing: Open Microsoft Bing<br />clear: Clear the terminal<br />code: Open Visual Studio Code<br />echo: Display message<br />exit: Exit the terminal<br />github: Open GitHub<br />help: Show this message<br />start: Open a website<br />time: Show the current time<br />version: Show the version of the OS<br />'
                                 break
                             case 'time':
                                 document.getElementById('output').innerHTML += `${document.getElementById('time').innerHTML}<br />`
                                 break
                             case 'version':
                                 document.getElementById('output').innerHTML += '&Alpha;&Omega; OS Version &Alpha;&alpha;<br />'
+                                break
+                            default:
+                                var list = document.getElementById('input').value.split(' ')
+                                switch (list[0])
+                                {
+                                    case 'echo':
+                                        document.getElementById('output').innerHTML += `${list.slice(1).join(' ')}<br />`
+                                        break
+                                    case 'start':
+                                        if (list.length === 2)
+                                            Open(list[1])
+                                        else
+                                            document.getElementById('output').innerHTML += 'Error.<br />'
+                                        break
+                                    default:
+                                        document.getElementById('output').innerHTML += 'Error.<br />'
+                                }
                         }
                         document.getElementById('input').value = ''
                     }
