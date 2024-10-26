@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang='en'>
     <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <style>
             @font-face
             {
@@ -23,10 +24,18 @@
                 height: 60px;
                 margin-top: 30px;
             }
+            #java
+            {
+                width: 400px;
+            }
             #left
             {
                 background: red;
                 float: left;
+            }
+            #python
+            {
+                width: 200px;
             }
             #right
             {
@@ -49,10 +58,6 @@
             body
             {
                 background: url(images/bg-img.jpg);
-            }
-            div
-            {
-                border-radius: 10px;
             }
             h1
             {
@@ -79,10 +84,14 @@
             {
                 width: 100%;
             }
-            .center, div, h1, h3
+            .center, div, h1, h3, nav
             {
                 font-family: scp;
                 text-align: center;
+            }
+            div, nav
+            {
+                border-radius: 10px;
             }
             span, ul
             {
@@ -100,7 +109,7 @@
         <h3>
             Profile
         </h3>
-        <div class='side' id='left'>
+        <nav class='side' id='left'>
             <ul>
                 Repositories:
                 <li>
@@ -120,8 +129,8 @@
                 </li>
                 ...
             </ul>
-        </div>
-        <div class='side' id='right'>
+        </nav>
+        <nav class='side' id='right'>
             <ul>
                 My Programming Languages:
                 <li>
@@ -144,7 +153,7 @@
                 </li>
                 ...
             </ul>
-        </div>
+        </nav>
         <div class='center'>
             <div>
                 <span>
@@ -171,7 +180,7 @@
                 </a>
             </div>
         </div>
-        <div class='center' id='index'>
+        <nav class='center' id='index'>
             <br />
             <a href='blogs' target='_blank'>
                 Blogs</a>
@@ -183,20 +192,20 @@
                 Tools
             </a>
             <br />
-        </div>
+        </nav>
         <br />
         <h3>
             Hello world!
         </h3>
-        <div class='center' id='code'>
+        <nav class='center' id='code'>
             <iframe src='codes/c'></iframe>
             <iframe src='codes/cpp'></iframe>
-            <iframe src='codes/java' width=400></iframe>
-            <iframe src='codes/py' width=200></iframe>
-        </div>
+            <iframe id='java' src='codes/java'></iframe>
+            <iframe id='python' src='codes/py'></iframe>
+        </nav>
         <div class='center' id='copyright'>
             <br />
-            Copyright (c) 2024 wylerror
+            Copyright © 2024 wylerror
             <br />
             wylerror.github.io
         </div>

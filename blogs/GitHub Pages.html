@@ -1,6 +1,7 @@
 ﻿﻿<!doctype html>
-<html>
+<html lang='en'>
     <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <script>
             var username, step = -1, help = ['Ensure you are logged in to GitHub', 'Create your repository and name it ".github.io"', 'Create your index.html or index.md in your directories and name it "DirectoryName/index.html" or "DirectoryName/index.md"<br />Create your 404.html or 404.md<br />Create your README.md<br />Create your LICENSE', 'Visit your website'], website = ['github.com/login', 'github.com/new', 'github.com//.github.io', '.github.io']
             function Change()
@@ -34,6 +35,7 @@
         <style>
             #website
             {
+                height: 720px;
                 width: 100%;
             }
             body
@@ -74,6 +76,6 @@
             <input onclick='SetStep(3)' type='button' value='4' />
         </label>
         <input onclick='NextStep()' type='button' value='Next step' />
-        <iframe height=725 id='website'></iframe>
+        <iframe id='website'></iframe>
     </body>
 </html>

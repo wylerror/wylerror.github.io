@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang='en'>
     <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <style>
             #center
             {
@@ -27,19 +28,6 @@
             {
                 background: cyan;
             }
-            div
-            {
-                background: white;
-                border-radius: 25px;
-                height: 715px;
-                overflow: hidden;
-                text-align: center;
-            }
-                div:hover
-                {
-                    background: deepskyblue;
-                    transition: background .25s ease-in;
-                }
             h2
             {
                 color: steelblue;
@@ -48,22 +36,35 @@
             {
                 width: 18%;
             }
+            div, nav
+            {
+                background: white;
+                border-radius: 25px;
+                height: 715px;
+                overflow: hidden;
+                text-align: center;
+            }
+                div:hover, nav:hover
+                {
+                    background: deepskyblue;
+                    transition: background .25s ease-in;
+                }
         </style>
         <title>
             Blog | 
         </title>
     </head>
     <body>
-        <div id='index'>
+        <nav id='index'>
             <h2>
                 Index
             </h2>
-        </div>
-        <div id='other-blogs'>
+        </nav>
+        <nav id='other-blogs'>
             <h2>
                 Other Blogs
             </h2>
-        </div>
+        </nav>
         <div id='center'>
             <h2>
                 Blog Title

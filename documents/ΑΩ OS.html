@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang='en'>
     <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <script>
             function ChangeSoftware(innerHTML)
             {
@@ -40,7 +41,7 @@
                                 Open('github.com')
                                 break
                             case 'help':
-                                document.getElementById('output').innerHTML += 'bing: Open Microsoft Bing<br />clear: Clear the terminal<br />code: Open Visual Studio Code<br />echo: Display message<br />exit: Exit the terminal<br />github: Open GitHub<br />help: Show this message<br />start: Open a website<br />time: Show the current time<br />version: Show the version of the OS<br />'
+                                document.getElementById('output').innerHTML += 'bing: Open Microsoft Bing<br />clear: Clear the terminal<br />code: Open Visual Studio Code<br />echo: Display message<br />exit: Exit the terminal<br />github: Open GitHub<br />help: Show this message<br />open: Open a website<br />time: Show the current time<br />version: Show the version of the OS<br />'
                                 break
                             case 'time':
                                 document.getElementById('output').innerHTML += `${document.getElementById('time').innerHTML}<br />`
@@ -55,7 +56,7 @@
                                     case 'echo':
                                         document.getElementById('output').innerHTML += `${list.slice(1).join(' ')}<br />`
                                         break
-                                    case 'start':
+                                    case 'open':
                                         if (list.length === 2)
                                             Open(list[1])
                                         else
@@ -71,7 +72,7 @@
             }
             function Time()
             {
-                const time = new Date();
+                const time = new Date()
                 document.getElementById('time').innerHTML = `${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}:${time.getSeconds().toString().padStart(2, '0')}`
             }
             setInterval(Time, 1000);
@@ -111,7 +112,7 @@
             #title
             {
                 display: inline-block;
-                width: calc(100% - 11vh);
+                width: calc(100% - 12ch);
             }
             .icon
             {

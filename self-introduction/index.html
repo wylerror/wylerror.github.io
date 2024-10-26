@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang='en'>
     <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <script>
             function Show()
             {
@@ -8,26 +9,30 @@
             }
         </script>
         <style>
+            #game
+            {
+                height: 720px;
+            }
             #hide
             {
                 display: none;
             }
             #show
             {
-                height: 310px;
+                height: 250px;
             }
             body
             {
                 background: silver;
                 text-align: center;
             }
-            a, body
-            {
-                color: gold;
-            }
             iframe
             {
                 width: 100%;
+            }
+            a, body
+            {
+                color: gold;
             }
         </style>
         <title>
@@ -61,7 +66,7 @@
         <div id='show' onclick='Show()'></div>
         <div id='hide'>
             <br />
-            <iframe height=735 src='../games/2048'></iframe>
+            <iframe id='game' src='../games/2048'></iframe>
         </div>
     </body>
 </html>
