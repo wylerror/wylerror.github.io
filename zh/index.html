@@ -48,13 +48,6 @@
                 margin: 0 auto;
                 width: 45%;
             }
-            .side
-            {
-                height: 200px;
-                overflow: hidden;
-                text-align: left;
-                width: 25%;
-            }
             body
             {
                 background: url(../images/bg-img.jpg);
@@ -84,6 +77,13 @@
             {
                 width: 100%;
             }
+            #left, #right
+            {
+                height: 200px;
+                overflow: hidden;
+                text-align: left;
+                width: 25%;
+            }
             .center, div, h1, h3, nav
             {
                 font-family: scp, 'Microsoft YaHei', 'PingFang SC';
@@ -109,9 +109,14 @@
         <h3>
             个人资料
         </h3>
-        <nav class='side' id='left'>
+        <nav id='left'>
             <ul>
                 仓库：
+                <li>
+                    <a href='https://github.com/wylerror/spark' target='_blank'>
+                        Spark
+                    </a>
+                </li>
                 <li>
                     <a href='https://github.com/wylerror/tapict' target='_blank'>
                         TAPICT
@@ -130,7 +135,7 @@
                 ...
             </ul>
         </nav>
-        <nav class='side' id='right'>
+        <nav id='right'>
             <ul>
                 我的编程语言：
                 <li>
@@ -193,14 +198,13 @@
             </a>
             <br />
         </nav>
-        <br />
         <h3>
             Hello world!
         </h3>
         <nav class='center' id='code'>
             <iframe src='../codes/c'></iframe>
             <iframe src='../codes/cpp'></iframe>
-            <iframe id='java' src='../java'></iframe>  
+            <iframe id='java' src='../codes/java'></iframe>
             <iframe id='python' src='../codes/py'></iframe>
         </nav>
         <div class='center' id='copyright'>

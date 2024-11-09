@@ -48,13 +48,6 @@
                 margin: 0 auto;
                 width: 45%;
             }
-            .side
-            {
-                height: 200px;
-                overflow: hidden;
-                text-align: left;
-                width: 25%;
-            }
             body
             {
                 background: url(images/bg-img.jpg);
@@ -84,6 +77,13 @@
             {
                 width: 100%;
             }
+            #left, #right
+            {
+                height: 200px;
+                overflow: hidden;
+                text-align: left;
+                width: 25%;
+            }
             .center, div, h1, h3, nav
             {
                 font-family: scp;
@@ -109,9 +109,14 @@
         <h3>
             Profile
         </h3>
-        <nav class='side' id='left'>
+        <nav id='left'>
             <ul>
                 Repositories:
+                <li>
+                    <a href='https://github.com/wylerror/spark' target='_blank'>
+                        Spark
+                    </a>
+                </li>
                 <li>
                     <a href='https://github.com/wylerror/tapict' target='_blank'>
                         TAPICT
@@ -130,7 +135,7 @@
                 ...
             </ul>
         </nav>
-        <nav class='side' id='right'>
+        <nav id='right'>
             <ul>
                 My Programming Languages:
                 <li>
@@ -193,7 +198,6 @@
             </a>
             <br />
         </nav>
-        <br />
         <h3>
             Hello world!
         </h3>
