@@ -11,6 +11,7 @@
             #code
             {
                 background: #7f7fff;
+                display: flex;
             }
             #copyright
             {
@@ -24,18 +25,10 @@
                 height: 60px;
                 margin-top: 30px;
             }
-            #java
-            {
-                width: 400px;
-            }
             #left
             {
                 background: red;
                 float: left;
-            }
-            #python
-            {
-                width: 200px;
             }
             #right
             {
@@ -47,6 +40,10 @@
                 background: green;
                 margin: 0 auto;
                 width: 45%;
+            }
+            audio
+            {
+                height: 110px;
             }
             body
             {
@@ -60,9 +57,9 @@
             {
                 color: orange;
             }
-            iframe
+            header
             {
-                margin: 12.5px 12.5px 12.5px 12.5px;
+                background: black;
             }
             img
             {
@@ -73,7 +70,7 @@
             {
                 color: skyblue;
             }
-            #code, #copyright
+            #code, #copyright, header
             {
                 width: 100%;
             }
@@ -84,7 +81,7 @@
                 text-align: left;
                 width: 25%;
             }
-            .center, div, h1, h3, nav
+            .center, div, header, h1, h3, nav, pre
             {
                 font-family: scp;
                 text-align: center;
@@ -103,6 +100,11 @@
         </title>
     </head>
     <body>
+        <header>
+            <a href='zh'>
+                中文
+            </a>
+        </header>
         <h1>
             Welcome to wylerror.github.io!
         </h1>
@@ -135,9 +137,6 @@
                 My Programming Languages:
                 <li>
                     C/C++
-                </li>
-                <li>
-                    Java
                 </li>
                 <li>
                     Python
@@ -196,20 +195,22 @@
         <h3>
             Hello world!
         </h3>
-        <nav class='center' id='code'>
-            <iframe src='codes/c'></iframe>
-            <iframe src='codes/cpp'></iframe>
-            <iframe id='java' src='codes/java'></iframe>
-            <iframe id='python' src='codes/py'></iframe>
-        </nav>
+        <div class='center' id='code'>
+            <pre>
+#include&lt;stdio.h&gt;              #include&lt;iostream&gt;        
+                             int main(void)                 int main()                        print('Hello world!')
+               {                              {                                 #Python
+        printf("Hello world!");        std::cout&lt;&lt;"Hello world!";
+                                       return 0;                      return 0;                     console.log('Hello world!')
+                               }                              }                                 //JavaScript/TypeScript
+//C                            //C++                     </pre>
+            <audio controls loop src='https://music.163.com/song/media/outer/url?id=1478054778.mp3' title='Alien Weapon'></audio>
+        </div>
         <div class='center' id='copyright'>
             <br />
             Copyright © 2024 wylerror
             <br />
             wylerror.github.io
         </div>
-        <a href='zh'>
-            中文
-        </a>
     </body>
 </html>
